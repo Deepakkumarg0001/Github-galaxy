@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+     <!---Bootstrap 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!---External icons-->
+    <script src="https://kit.fontawesome.com/a428be8594.js" crossorigin="anonymous"></script>
+    <!---Bootstrap 5 icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      nav{
+        box-shadow: 0px 0px 15px ;
+        background-image: linear-gradient(#66FCF1, #EDC7B7);
+      }
+      .dropdown-menu{
+        background-image: linear-gradient(#66FCF1, #EDC7B7);
+      }
+      main{
+        margin-top: 68px;
+        background-image: linear-gradient(#66FCF1, #EDC7B7);
+
+      }
+      .links a{
+      display: inline-block;
+      height: 44px;
+      width: 44px;
+      color: white;
+      background-image: linear-gradient(#748D92,#0FA4AF);
+      margin: 0 8px 8px 0;
+      text-align: center;
+      line-height: 44px;
+      border-radius: 50%;
+      transition: 0.4s;
+     }
+     .links a:hover{
+      color: white;
+      background-image: linear-gradient(#0FA4AF,#748D92);
+     }
+     .btn{
+      background-image: linear-gradient(#748D92,#0FA4AF);
+      color: white;
+      border: none;
+     }
+     .btn:hover{
+      background-image: linear-gradient(#0FA4AF,#748D92);
+      color: white;
+     }
+     .box{
+     position: fixed;
+     bottom: 10px;
+     right: 10px;     
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+    }
+     .box a{
+      display: inline-block;
+      margin-left: 2px;
+      height: 44px;
+      width: 44px;
+      color: white;
+      background-image: linear-gradient(#748D92,#0FA4AF);
+      margin: 0 8px 8px 0;
+      text-align: center;
+      line-height: 44px;
+      border-radius: 50%;
+      transition: 0.4s;
+     }
+     .box a:hover{
+      color: white;
+      background-image: linear-gradient(#0FA4AF,#748D92);
+     }
+
+
+
+      .container-fluid{
+        margin-left: 50px;
+
+      }
+      #Home{
+        margin-left: 50px;
+      }
+      #Home:hover{
+        color: blue;
+        background-color: transparent;
+        
+      }
+      *{
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        line-height: 1.2;
+      }
+     body{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: aliceblue;
+     }
+     footer{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: auto;
+      background-color: #2d2e33;
+      padding: 60px 10%;
+     }
+     ul{
+      list-style: none;
+     }
+     .footer-col{
+      width: 25%;
+     }
+     .footer-col h4{
+      position: relative;
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 22px;
+      color: #f1bc0d;
+      text-transform: capitalize;
+     }
+     .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      background-color: #27c0ac;
+      height: 2px;
+      width: 40px;
+     }
+     ul li:not(:last-child){
+      margin-bottom: 8px;
+     }
+     ul li a{
+      display: block;
+      font-size: 19px;
+      text-transform: capitalize;
+      color: white;
+      text-decoration: none;
+      transition: 0.4s;
+     }
+     ul li a:hover{
+      color: yellowgreen;
+      padding-left: 2px;
+     }
+     @media(max-width="740px") {
+      .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .footer-col h4::before{
+        all: unset;
+      }
+     }
+     @media(max-width: 555px){
+      .footer-col{
+        width: 100%;
+      }
+     }
+     
+     
+     .row{
+        box-shadow: 0px 0px 15px;
+     }
+     .col-md-7{
+        padding: 30px;
+     }
+     .col-md-5{
+        padding: 30px;
+        background-image: linear-gradient(#748D92,#0FA4AF);
+        color: white;
+     }
+     .form-control{
+        height: 52px;
+        background: #fff;
+        color: #000;
+        font-size: 14px;
+        border-radius: 2px;
+        box-sizing: none! important;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+     }
+    
+     .d-flex p{
+        font-size: 18px;
+        padding-left: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     @media only screen and (max-width:740px){
+       .container{
+        width: 50%;
+        position: relative;
+       }
+     }
+    
+     @media only screen and (max-width:555px){
+       .container{
+        width: 100%;
+        
+       }
+     }
+     .reserved p{
+      position: relative;
+      margin-bottom: 0px;
+      color: white;
+      
+     }
+   
+     .map-responsive{
+      overflow: hidden;
+      padding-bottom: 40%;
+      position: relative;
+      height: 0;
+     }
+     .map-responsive iframe{
+     
+     padding-top: 50px;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+     }
+     .map-responsive h4{
+      padding-left: 30px;
+     }
+     
+     .container{
+      background-color: skyblue;
+     }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img style="height: 40px; width: 40px;" src="./image/aarav.png" alt="">
+            <b><b>AaRaV EvEnTs</b></b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+              <li class="nav-item">
+                <a class="nav-link active" id="Home" aria-current="page" href="index.html"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="Home" href="About.html"><b>About</b></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" id="Home" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Services</b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"id="Home" href="Magic shows.html">Magic Shows</a></li>
+                  <li><a class="dropdown-item"id="Home" href="Tattoo artists.html">Tattoo Artists</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" id="Home" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Decorations</b>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item"id="Home" href="index.html">Kids Birthday Decoration</a></li>
+                <li><a class="dropdown-item"id="Home" href="wedding.html">Wedding Decoration</a></li>
+                <li><a class="dropdown-item"id="Home" href="Bachelor Party.html">Bachelor Party Decorations</a></li>
+                <li><a class="dropdown-item"id="Home" href="Love Theme.html">Love Theme Decorations</a></li>
+                <li><a class="dropdown-item"id="Home" href="Anniversary.html">Anniversary Decoration</a></li>
+                <li><a class="dropdown-item"id="Home" href="Ring Setup.html">Ring Setup Decoration</a></li>
+                <li><a class="dropdown-item"id="Home" href="Haldi.html">Haldi Decoration</a></li>
+  
+                </ul>
+              </li>
+              </li><li class="nav-item">
+                <a class="nav-link active" id="Home" aria-current="page" href="Quotes.html"><b>Quotes</b></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-but">
+                <a href="Contact.html"> <button type="button" class="btn btn-light" ><b>Contact Us</b></button></a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <main><br>
+        <div style="margin-left: 20px;"><h4><b>Contact</b></h4>
+          <p >Home > Contact</p>
+        </div><hr>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h4><b><b>Contact Form</b></b></h4>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Name</b></label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Email Address</b></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Contact Number</b></label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number" required pattern="[0-9]]{50}">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Location</b></label>
+                    <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="Address" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comment" rows="3"></textarea>
+                  </div>
+                  <div>
+                    <button id="submit" class="btn btn-primary"><b>Clear</b></button>
+                    <button id="submit" class="btn btn-primary"><b>Send</b></button>
+                  </div>
+            </div>
+          </form>
+            <div class="col-md-5">
+                <h4><b><b>Contact Us</b></b></h4><hr>
+                <div class="mt-5">
+                    <div class="d-flex">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p><b>Address :</b> 1205, Tower -B1, SUPERTECH ECO VILLAGE-2, behind Greater Noida West Road, Eco Village 2, Bhangel, Greater Noida, Ghaziabad, Uttar Pradesh 201009</p>
+                    </div><hr>
+                    <div class="d-flex">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p><b>Contact :</b> +91 7065563411</p>
+                    </div><hr>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <p><b>E-mail :</b> aaravji8178810761@gmail.com</p>
+                    </div><hr>
+                </div>
+            </div>
+        </div>
+      </div><br><hr>
+
+<div class="map-responsive">
+  <h4><b><b>Our Location</b></b></h4>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.496420860483!2d77.4436635!3d28.6110515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6841a470ed3fc63%3A0x85fe6506830b3a2d!2sAarav%20Balloon%20Decoration%20%26%20Caterers!5e0!3m2!1sen!2sin!4v1723279761477!5m2!1sen!2sin" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div><br><hr>
+    </main>
+
+    
+    <div class="box">
+      <a href="https://wa.link/sc6gmk"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="tel:7065563411"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+
+      <footer>
+        <div class="footer-col">
+          <h4>Decorations</h4>
+          <ul>
+          <li><a href="index.html">Kids Birthday Decoration</a></li>
+          <li><a href="wedding.html">Wedding Decoration</a></li>
+          <li><a href="Bachelor Party.html">Bachelor Party Decoration</a></li>
+          <li><a href="Love Theme.html">Love Theme Decoration</a></li>
+          <li><a href="Anniversary.html">Anniversary Decoration</a></li>
+          <li><a href="Ring Setup.html">Ring Setup Decoration</a></li>
+          <li><a href="Haldi.html">Haldi Decoration</a></li>
+  
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About us</a></li>
+          <li><a href="Quotes.html">Quotes</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+       
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="links">
+          <a href="https://www.youtube.com/@aaravevent2989"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100076445313270&mibextid=qi2Omg&rdid=40b4QqKAJZHW34yb&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FkMjjAjeq7moyokVs%2F%3Fmibextid%3Dqi2Omg"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://maps.app.goo.gl/4NFspBWbprhYdhbo7"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="https://www.instagram.com/aarav.event_/?igsh=djN4bXc1dGNzdG5l"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="reserved">
+          <p>@ 2024 <b>AaRaV EvEnTs.</b> All right reserved | Designed by <b>Deepak Kumar.</b></p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
